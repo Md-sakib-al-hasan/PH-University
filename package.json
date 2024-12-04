@@ -1,0 +1,45 @@
+{
+  "name": "project-two",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node-dev ./src/server.ts",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier . --write .",
+    "build": "npm run lint && npm run format && tsc && node ./dist/server.js "
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/validator": "^13.12.2",
+    "bcrypt": "^5.1.1",
+    "bkash-payment": "^3.0.5",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "http-errors": "^2.0.0",
+    "http-status": "^2.0.0",
+    "http-status-codes": "^2.3.0",
+    "joi": "^17.13.3",
+    "mongoose": "^8.8.1",
+    "ts-node": "^10.9.2",
+    "validator": "^13.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@types/cors": "^2.8.17",
+    "@types/eslint__js": "^8.42.3",
+    "@types/express": "^5.0.0",
+    "@types/http-status": "^0.2.30",
+    "eslint": "^9.14.0",
+    "globals": "^15.12.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.14.0"
+  }
+}
