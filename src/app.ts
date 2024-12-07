@@ -22,6 +22,7 @@ const test = (req: Request, res: Response) => {
   res.send(a);
 };
 
+
 app.get('/', test);
 
 app.use(globalErrorHandler);
