@@ -52,6 +52,7 @@ const globalErrorHandler:ErrorRequestHandler = (err,req,res,next:NextFunction) =
         
       statusCode = err?.statusCode;
       message = err.message;
+      console.log("this error is print")
       errorSources = [{
            path:'',
            message:err?.message
